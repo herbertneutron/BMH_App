@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en" class="isPWA">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <title>BMH | Maintain</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fontawesome-all.min.css">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light" data-highlight="highlight-red" data-new-gr-c-s-check-loaded="14.1027.0"
+    data-gr-ext-installed="">
+    
+    <div id="page" data-swup="0">
+        <div class="header header-auto-show header-fixed header-logo-center">
+            <a href="#" class="header-title"><img width="30" src="Images/blue-1.png"></a>
+            <a onclick="javascript:window.history.back();"   class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+            <a href="#" data-toggle-theme="" class="header-icon header-icon-4 show-on-theme-dark"><i
+                    class="fas fa-sun"></i></a>
+            <a href="#" data-toggle-theme="" class="header-icon header-icon-4 show-on-theme-light"><i
+                    class="fas fa-moon"></i></a>
+            <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
+        </div>
+        <div id="footer-bar" class="footer-bar-6" style="
+                max-width:70%;
+                margin-left: 15%;
+                margin-bottom:2%;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 15px;
+                ">
+            <a href="https://buildmyhouseafrica.com/app/index.html" style="color:white"><i
+                    class="fa fa-home"></i><span>Home</span><em></em><strong><u></u></strong></a>
+            <a href="https://buildmyhouseafrica.com/app/category.html" style="color:white"
+                ><i class="fas fa-shopping-cart"></i></i><span>Shop</span></a>
+
+            <a href="#" data-menu="menu-main" style="color:white"><i
+                    class="fas fa-user"></i></i><span>Profile</span></a>
+        </div>
+        <div class="page-title page-title-fixed">
+            <h1> <img width="40" src="Images/blue-1.png"></h1>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i
+                    class="fa fa-share-alt"></i></a>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light"
+                data-toggle-theme=""><i class="fa fa-moon"></i></a>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark"
+                data-toggle-theme=""><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+            <a onclick="javascript:window.history.back();"  class="page-title-icon shadow-xl bg-theme color-theme" ><i class="fa fa-arrow-left"></i></a>
+        </div>
+        <div class="page-title-clear"></div>
+        <div id="menu-mains" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            data-menu-load="menu-mains.html" style="display: block; width: 280px;">
+        </div>
+        <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            style="display: block; width: 280px;">
+            <div class="card rounded-0 bg-6" data-card-height="150" style="height: 150px;">
+                <div class="card-top">
+                    <a href="#" class="close-menu float-end me-2 text-center mt-3 icon-40 notch-clear"><i
+                            class="fa fa-times color-white"></i></a>
+                </div>
+                <div class="card-bottom">
+                    <h1 class="color-white ps-3 mb-n1 font-28"></h1>
+                    <p class="mb-2 ps-3 font-12 color-white opacity-50"></p>
+                </div>
+                <div class="card-overlay bg-gradient"></div>
+            </div>
+            <div class="mt-4"></div>
+            <h6 class="menu-divider">Library</h6>
+            <div class="list-group list-custom-small list-menu">
+                <a id="nav-welcome" href="#" class="active-nav">
+                    <i class="fa fa-heart gradient-red color-white"></i>
+                    <span>Welcome</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-homepages" href="index-homepages.html">
+                    <i class="fa fa-home gradient-green color-white"></i>
+                    <span>Homepages</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-components" href="index-components.html">
+                    <i class="fa fa-cog gradient-blue color-white"></i>
+                    <span>Components</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-pages" href="index-pages.html">
+                    <i class="fa fa-file gradient-brown color-white"></i>
+                    <span>Pages</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-media" href="index-projects.html">
+                    <i class="fa fa-camera gradient-magenta color-white"></i>
+                    <span>Media</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-contact" href="#">
+                    <i class="fa fa-envelope gradient-teal color-white"></i>
+                    <span>Contact</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-height="370"
+            style="display: block; height: 370px;">
+            <div class="menu-title">
+                <p class="color-highlight">Tap a link to</p>
+                <h1>Share</h1>
+                <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="divider divider-margins mt-3 mb-0"></div>
+            <div class="content mt-0">
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToFacebook">
+                        <i class="fab fa-facebook-f font-12 bg-facebook color-white shadow-l rounded-s"></i>
+                        <span>Facebook</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="https://twitter.com/share?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToTwitter">
+                        <i class="fab fa-twitter font-12 bg-twitter color-white shadow-l rounded-s"></i>
+                        <span>Twitter</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.enableds.com/products/appkit/v22/index.html&amp;title=AppKit BootStrap&amp;summary=&amp;source="
+                        class="external-link shareToLinkedIn">
+                        <i class="fab fa-linkedin-in font-12 bg-linkedin color-white shadow-l rounded-s"></i>
+                        <span>LinkedIn</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="whatsapp://send?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToWhatsApp">
+                        <i class="fab fa-whatsapp font-12 bg-whatsapp color-white shadow-l rounded-s"></i>
+                        <span>WhatsApp</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="mailto:?body=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToMail border-0">
+                        <i class="fa fa-envelope font-12 bg-mail color-white shadow-l rounded-s"></i>
+                        <span>Email</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-height="480"
+            style="display: block; height: 480px;">
+            <div class="menu-title">
+                <p class="color-highlight font-600">Choose your Favorite</p>
+                <h1>Highlight</h1>
+                <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="divider divider-margins mt-3 mb-2"></div>
+            <div class="content mt-0 ms-0 me-0">
+                <div class="row mb-0">
+                    <div class="col-6">
+                        <div class="list-group list-custom-small list-menu">
+                            <a href="#" data-change-highlight="blue">
+                                <i class="gradient-blue color-white"></i>
+                                <span>Blue</span>
+                            </a>
+                            <a href="#" data-change-highlight="red">
+                                <i class="gradient-red color-white"></i>
+                                <span>Red</span>
+                            </a>
+                            <a href="#" data-change-highlight="orange">
+                                <i class="gradient-orange color-white"></i>
+                                <span>Orange</span>
+                            </a>
+                            <a href="#" data-change-highlight="green">
+                                <i class="gradient-green color-white"></i>
+                                <span>Green</span>
+                            </a>
+                            <a href="#" data-change-highlight="yellow">
+                                <i class="gradient-yellow color-white"></i>
+                                <span>Yellow</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="list-group list-custom-small list-menu">
+                            <a href="#" data-change-highlight="dark">
+                                <i class="gradient-dark color-white"></i>
+                                <span>Dark</span>
+                            </a>
+                            <a href="#" data-change-highlight="gray">
+                                <i class="gradient-gray color-white"></i>
+                                <span>Gray</span>
+                            </a>
+                            <a href="#" data-change-highlight="teal">
+                                <i class="gradient-teal color-white"></i>
+                                <span>Teal</span>
+                            </a>
+                            <a href="#" data-change-highlight="magenta">
+                                <i class="gradient-magenta color-white"></i>
+                                <span>Plum</span>
+                            </a>
+                            <a href="#" data-change-highlight="brown">
+                                <i class="gradient-brown color-white"></i>
+                                <span>Brown</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider divider-margins mt-2"></div>
+            <a href="#"
+                class="close-menu btn btn-margins btn-m font-13 rounded-s shadow-xl btn-full gradient-highlight border-0 font-700 text-uppercase">Awesome</a>
+        </div>
+        <div class="page-content">
+            <br>
+            <a href="#">
+                <div class="card card-style">
+                    <div class="">
+
+                        <div>
+                            <input type="text" class="font-700 mb-2"
+                                style="margin-left:10px;width:100%;border: none;margin-top: 10px;" placeholder="Search">
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+
+            <br />
+            <h5 style="margin-left:5%;">Categories</h5>
+            <br />
+            <div class="row mb-0">
+                <a data-menu="Others-enquiry" id="Electrician" onclick="GetServiceType(this.id)" href="#"
+                    class="col-6 pe-0">
+                    <div class="card mr-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/electrician.jpg')">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Electrician</p>
+                </a>
+                <a data-menu="Cleaners-enquiry" id="Cleaners" onclick="GetServiceType(this.id)" href="#"
+                    class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/cleaner.jpg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Cleaners</p>
+                </a>
+            </div>
+            <br>
+            <div class="row mb-0">
+                <a data-menu="Others-enquiry" id="Plumbers" onclick="GetServiceType(this.id)" href="#"
+                    class="col-6 pe-0">
+                    <div class="card mr-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/plumber.jpg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;"> Plumbers</p>
+                </a>
+                <a data-menu="Others-enquiry" id="Carpenters" onclick="GetServiceType(this.id)" href="#"
+                    class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/carpenter.jpg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Carpenters</p>
+                </a>
+            </div>
+            <div class="row mb-0">
+                <a data-menu="Others-enquiry" id="Painters" onclick="GetServiceType(this.id)" href="#"
+                    class="col-6 pe-0">
+                    <div class="card mr-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/painter.jpg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Painters</p>
+                </a>
+                <a data-menu="Others-enquiry" id="Gardeners" onclick="GetServiceType(this.id)" href="#"
+                    class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/gardener.jpg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Gardeners</p>
+                </a>
+            </div>
+
+        </div>
+        <input type="text" id="ServiceType" style="display: none;">
+
+        <div id="Cleaners-enquiry" class="menu menu-box-bottom rounded-m " data-menu-height="620"
+            style="display: block; height: 80%;">
+            <div class="menu-title">
+                <br /><br />
+                <a href="#" class="close-menu"><i style="color: black;" class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="content mb-0 mt-0">
+                <div class="content mb-0">
+                    <label for="form6a"><strong>Choose a cleaning type</strong></label>
+                    <div class="row mb-0">
+                        <div class="col-4 ps-1 pe-1">
+                            <a href="#" onclick="GetCleaningType(this.id)" id="Regular"
+                                style="color: write;background: black !important;;border-color: black;"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-sm  font-200 bg-theme">Standard</a>
+                        </div>
+                        <div class="col-3 ps-1 pe-1">
+                            <a href="#" onclick="GetCleaningType(this.id)" id="Deep"
+                                style="color: white;background: black !important;;border-color: black;"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-sm  font-200 bg-theme">Deep</a>
+                        </div>
+                        <div class="col-5 ps-1 pe-1">
+                            <a href="#" onclick="GetCleaningType(this.id)" id="Housekeeping"
+                                style="color: white;background: black !important;;border-color: black;"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-sm  font-200 bg-theme">House-Keeping</a>
+                        </div>
+                        
+                        <div class="col-4 ps-1 pe-1">
+                            <a href="#" onclick="GetCleaningType(this.id)" id="Pre-Construction"
+                                style="color: white;background: black !important;;border-color: black;padding-left: 0px!important;padding-right: 0px!important;"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-sm  font-200  bg-theme">Pre-Construction</a>
+                        </div>
+                        <div class="col-4 ps-1 pe-1">
+                            <a href="#" onclick="GetCleaningType(this.id)" id="Post-Construction"
+                                style="color: white;border-color: white;background: black !important;;padding-left: 0px!important;padding-right: 0px!important;width:120%;"
+                                class="btn btn-border btn-m btn-full mb-3 rounded-sm  font-200 bg-theme">Post-Construction</a>
+                        </div> 
+                        <input type="text" id="CleaningType"
+                        style="display: none;background-color:transparent !important;" readonly>
+                    </div>
+                </div>
+                <div id="Othercleaning" style="display: none;">
+                    <br />
+                    <div class="content mb-0 mt-0">
+                        <div class="mx-auto">
+                            <div class="input-style has-borders no-icon mb-4">
+                                <input type="text" placeholder="Fullname" class="form-control validate-text" id="ConsFullname">
+
+                            </div>
+                        </div>
+                        <div class="mx-auto">
+                            <div class="input-style has-borders no-icon mb-4">
+                                <input type="text" placeholder="Mobile" class="form-control validate-text" id="ConsMobile">
+
+                            </div>
+                        </div>
+                        <div class="mx-auto">
+                            <div class="input-style has-borders no-icon mb-4">
+                                <input type="email" placeholder="Email" class="form-control validate-text" id="ConsEmail">
+
+                            </div>
+                        </div>
+                       
+
+                        <div class="row" style="margin-bottom: 0px;">
+                            <div class="col-6">
+                                <div class="mx-auto">
+                                    <label for="form6a">Available date</label>
+                                    <div class="input-style has-borders no-icon mb-4">
+                                        <input type="date" class="form-control validate-text" id="ConsAvailableDate">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mx-auto">
+                                    <label for="form6a">Available Time</label>
+                                    <div class="input-style has-borders no-icon mb-4">
+                                        <input type="text" class="form-control validate-text" id="ConsAvailableTime">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="form7">Address for inspection</label>
+                        <div class="input-style has-borders no-icon mb-4">
+                            <input type="text" class="form-control validate-text" id="Address">
+
+                        </div>
+                        <a href="#" style="background-color: black;color: white;"
+                            class="btn btn-full btn-m shadow-l rounded-s font-600  mt-4">Send Enquiry</a>
+                    </div>
+                </div>
+                <div id="MainCleaning">
+                    <!-- <label for="form6a"><strong>Choose a work type</strong></label> -->
+                    <!-- <div class="row" style="margin-bottom: 0px;">
+                        <div class="col-3">
+                            <div class="mx-auto">
+                                <div class="form-check icon-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check3">
+                                    <label class="form-check-label" for="check3">Flat</label>
+                                    <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                    <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mx-auto">
+                                <div class="form-check icon-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check4">
+                                    <label class="form-check-label" for="check4">Duplex</label>
+                                    <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                    <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mx-auto">
+                                <div class="form-check icon-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="check5">
+                                    <label class="form-check-label" for="check5">Commercial</label>
+                                    <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                    <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+                    <br />
+                    <div class="mx-auto">
+                        <div class="input-style has-borders no-icon mb-4">
+                            <input type="text" placeholder="Fullname" class="form-control validate-text" id="CFullname">
+
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="input-style has-borders no-icon mb-4">
+                            <input type="text" placeholder="Mobile" class="form-control validate-text" id="CMobile">
+
+                        </div>
+                    </div>
+                    <div class="mx-auto">
+                        <div class="input-style has-borders no-icon mb-4">
+                            <input type="email" placeholder="Email" class="form-control validate-text" id="CEmail">
+
+                        </div>
+                    </div>
+
+                    <div class="input-style input-style-always-active has-borders no-icon mb-4">
+
+                        <select id="ApartmentType">
+                            <option value="">Apartment Type</option>
+                            <option value="MF">1 Bedroom / Mini flat</option>
+                            <option value="2BF">2 Bedroom flat</option>
+                            <option value="3BF">3 Bedroom flat</option>
+                            <option value="4BF">4 Bedroom flat</option>
+                            <option value="3BD">3 Bedroom Duplex</option>
+                            <option value="4BD">4 Bedroom Duplex</option>
+                            <option value="5BD">5 Bedroom Duplex</option>
+                        </select>
+                        <span><i class="fa fa-chevron-down"></i></span>
+                    </div>
+                    <div class="input-style input-style-always-active has-borders no-icon mb-4">
+                        <input type="text" class="form-control validate-text" id="Address1">
+                    </div>
+                    <div class="input-style input-style-always-active has-borders no-icon mb-4" id="FrequencyPr" style="display: none;">
+
+                        <select id="Frequency">
+                            <option value="default">Choose frequency</option>
+                            <option value="1">One-off</option>
+                            <option value="2">Two times</option>
+                            <option value="4">Four times</option>
+                            <option value="8">Eight times</option>
+                        </select>
+                        <span><i class="fa fa-chevron-down"></i></span>
+                    </div>
+                    <div class="row" style="margin-bottom: 0px;">
+                        <div class="col-6">
+                            <div class="mx-auto">
+                                <label for="form6a">Available date</label>
+                                <div class="input-style has-borders no-icon mb-4">
+                                    <input type="date" class="form-control validate-text" id="CAvailableDate">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mx-auto">
+                                <label for="form6a"> Available Time</label>
+                                <div class="input-style has-borders no-icon mb-4">
+                                    <input type="text" class="form-control validate-text" id="CAvailableTime">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-style has-borders no-icon mb-4">
+                        <textarea style="background:transparent;" id="CProblem" placeholder="Extra note"></textarea>
+
+                    </div>
+                    <a href="#" onclick="GetEstimate()" data-menu="Estimate"
+                        style="background-color: black;color: white;"
+                        class="btn btn-full btn-m shadow-l rounded-s font-600 mt-4">Get Estimate</a>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="Others-enquiry" class="menu menu-box-bottom rounded-m " data-menu-height="620"
+            data-menu-effect="menu-over" style="display: block; height: 50%;">
+            <div class="menu-title">
+                <br /><br />
+                <a href="#" class="close-menu"><i style="color: black;" class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="content mb-0 mt-0">
+                <div class="mx-auto">
+                    <div class="input-style has-borders no-icon mb-4">
+                        <input type="text" placeholder="Fullname" id="Fullname" class="form-control ">
+
+                    </div>
+                </div>
+                <div class="mx-auto">
+                    <div class="input-style has-borders no-icon mb-4">
+                        <input type="text" placeholder="Mobile" id="Mobile" class="form-control ">
+
+                    </div>
+                </div>
+                <div class="mx-auto">
+                    <div class="input-style has-borders no-icon mb-4">
+                        <input type="email" placeholder="Email" id="Email" class="form-control ">
+
+                    </div>
+                </div>
+
+                <div class="input-style input-style-always-active has-borders no-icon mb-4">
+
+                    <input type="text" class="form-control " id="Address2">
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mx-auto">
+                            <label for="form6a">Select date</label>
+                            <div class="input-style has-borders no-icon mb-4">
+                                <input type="date" id="AvailableDate" class="form-control ">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mx-auto">
+                            <label for="form6a">Select time</label>
+                            <div class="input-style has-borders no-icon mb-4">
+                                <input type="text" id="AvailableTime" class="form-control ">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label for="form7">What is the suspected problem?</label>
+                <div class="input-style has-borders no-icon mb-4">
+                    <textarea style="background:transparent;" id="Problem" placeholder=""></textarea>
+                </div>
+                <a href="#" onclick="SendEnquiry()" style="background-color: black;color: white;"
+                    class="btn btn-full btn-m shadow-l rounded-s font-600  mt-4">Send Request</a>
+            </div>
+        </div>
+        <div id="Estimate" class="menu menu-box-bottom rounded-m " data-menu-height="620" data-menu-effect="menu-over"
+            style="display: block; height: 50%;">
+            <div class="menu-title">
+                <br /><br />
+                <a href="#" class="close-menu"><i style="color: black;" class="fa fa-times-circle"></i></a>
+            </div>
+
+            <div class="content mb-0 mt-0">
+                <input type="text" style="display: none;" id="Price">
+                <input type="text" style="display: none;" id="Frequency">
+                <input type="text" style="display: none;" id="Discount">
+                <h5>Estimate as per request</h5>
+                <br />
+                <div class="input-style has-borders no-icon mb-4">
+                    <input type="text" class="form-control validate-text" id="EstCleaningType" readonly>
+
+                </div>
+                <div class="input-style has-borders no-icon mb-4">
+                    <input type="text" class="form-control validate-text" id="EstApartmentType" readonly>
+
+                </div>
+                <div class="input-style has-borders no-icon mb-4">
+                    <input type="text" class="form-control validate-text" id="EstFrequency" readonly>
+
+                </div>
+                <div class="row mb-0">
+                    <div class="col-6 "style="padding-top: 10%;" >
+                        <p id="EstDiscount"></p>
+                    </div>
+                    <div class="col-6 " style="margin-bottom: 10%;">
+                        <a href="#" onclick="ViewBreakdown()" style="background-color: transparent;border-color:black;color: black;"
+                        class="btn  btn-m shadow-l rounded-s font-2oo mt-4">View Breakdown</a>
+                    </div>
+                </div>
+                
+                
+                <h3 id="EstPrice">Amount Payable : </h3>
+                <a href="#" onclick="SendCleaningEnquiry()" style="background-color: black;color: white;"
+                    class="btn btn-full btn-m shadow-l rounded-s font-600  mt-4">Process</a>
+            </div>
+        </div>
+
+        <div id="menu-share" class="menu menu-box-bottom menu-box-detached" style="display: block;">
+            <div class="menu-title mt-n1">
+                <p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#"
+                    class="close-menu"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="content mb-0">
+                <div class="divider mb-0"></div>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToFacebook external-link">
+                        <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                        <span class="font-13">Facebook</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="https://twitter.com/share?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToTwitter external-link">
+                        <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                        <span class="font-13">Twitter</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.enableds.com/products/appkit/v22/index.html&amp;title=AppKit BootStrap&amp;summary=&amp;source="
+                        class="shareToLinkedIn external-link">
+                        <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                        <span class="font-13">LinkedIn</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="whatsapp://send?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToWhatsApp external-link">
+                        <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                        <span class="font-13">WhatsApp</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="mailto:?body=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToMail external-link border-0">
+                        <i class="font-18 fa fa-envelope-square color-mail"></i>
+                        <span class="font-13">Email</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyD1eGdP6hCYQ06z86dMEwoLNFMPYPbhgYs&amp"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <script>
+
+        function checkIsMobile() {
+            if (navigator.userAgent.indexOf("Mobile") > 0) {
+                return true;
+            } else {
+                // alert('We currently run ONLY on mobile ')
+                //window.location.href = "https://buildmyhouseafrica.com/";
+                return true;
+            }
+        }
+
+        checkIsMobile()
+
+        function CheckOption(id) {
+            if (id == "Pre-Construction" || id == "Post-Construction") {
+                $("#MainCleaning").hide();
+                $("#Othercleaning").show();
+            }
+            else {
+                $("#Othercleaning").hide();
+                $("#MainCleaning").show();
+            }
+        }
+        function RequestResponse(title, message, icon) {
+            swal({
+                title: title,
+                text: message,
+                icon: icon,
+                //timer: 3000,
+                button: "okay"
+            }).then(function () {
+                location.reload();
+            });
+
+        }
+
+        function initialize() {
+            var input = document.getElementById('Address');
+            new google.maps.places.Autocomplete(input);
+            var input = document.getElementById('Address1');
+            new google.maps.places.Autocomplete(input);
+            var input = document.getElementById('Address2');
+            new google.maps.places.Autocomplete(input);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+        function GetProducts() {
+            var query = `{products(status:"living room"){id,name,status,description,price,imageCollection{url,name,id}}}`;
+            var Url = "https://us-central1-build-myhouse.cloudfunctions.net/bmhAPi/graphql?query=" + query
+
+
+            $.ajax({
+                method: 'POST',
+                url: Url,
+                //data: JSON.stringify({"query": query}),
+                contentType: 'application/json',
+                success: function (data) {
+                    console.log(data);
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+
+            })
+
+        };
+
+        function GetServiceType(id) {
+
+            $("#ServiceType").val(id)
+      }
+
+        function GetCleaningType(id) {
+            $("#CleaningType").val(id)
+            $("#CleaningType").show()
+             CheckOption(id)
+
+             if(id == "Housekeeping")
+             {
+                $("#FrequencyPr").show() 
+             }else
+             {
+                $("#FrequencyPr").hide() 
+             }
+        }
+
+       function  ViewBreakdown(){
+        if ($("#CleaningType").val() == "Regular") { alert('All surfaces dusted and cleaned , All bathroom counters and fixtures cleaned,Bathroom cleaned, Beds made (includes master and one additional bed), Floors swept and mopped, Kitchen swept and mopped ,Door knob cleaned and Cobwebs removed')}
+
+        if ($("#CleaningType").val() == "Deep") { alert('All surfaces dusted and cleaned,Cobwebs Removed, All bathroom counters and fixtures cleaned,Furnitures moved to to dust out dirt residue, Beds made (includes master and one additional bed),Floors swept and ,mopped, Kitchen swept and mopped, Door knob cleaned, Stairs swept and mopped')}
+       }
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+        function GetEstimate() {
+
+            var apartmentType = $("#ApartmentType").val()
+            var cleaningType = ""
+            if ($("#CleaningType").val() == "Regular") { cleaningType = "Regular Cleaning" }
+            if ($("#CleaningType").val() == "Deep") { cleaningType = "Deep Cleaning" }
+            if ($("#CleaningType").val() == "Housekeeping") { cleaningType = "Housekeeping" }
+            var frequency = ""
+            if($("#CleaningType").val() != "Housekeeping"){ frequency = "1" }
+            else{frequency = $("#Frequency").val()}
+
+            if (frequency == "1") {
+                var query = `{cleaningcosts(apartmentType: "${apartmentType}", cleaningType: "${cleaningType}") {
+                                id
+                                apartmentType
+                                cleaningType
+                                location
+                                price
+                                discount
+                                frequency
+                                vendor
+                            }
+                            }`;
+            } else {
+                var query = `{cleaningcosts(apartmentType: "${apartmentType}", cleaningType: "${cleaningType}", frequency: ${frequency}) {
+                                id
+                                apartmentType
+                                cleaningType
+                                location
+                                price
+                                discount
+                                frequency
+                                vendor
+                            }
+                            }`;
+            }
+
+
+            var Url = "https://us-central1-build-myhouse.cloudfunctions.net/bmhAPi/graphql?query=" + query
+
+
+            $.ajax({
+                method: 'POST',
+                url: Url,
+                //data: JSON.stringify({"query": query}),
+                contentType: 'application/json',
+                success: function (response) {
+                    {
+
+                        if (response.data.cleaningcosts.length > 0) {
+                            for (var i = 0; i < response.data.cleaningcosts.length; i++) {
+                                $("#EstCleaningType").val("Cleaning Type: " + response.data.cleaningcosts[i].cleaningType)
+                                $("#EstApartmentType").val("Apartment Type: " + response.data.cleaningcosts[i].apartmentType)
+                                $("#EstFrequency").val("Frequency: " + response.data.cleaningcosts[i].frequency)
+                                $("#EstDiscount").text("₦" + response.data.cleaningcosts[i].price + ": " + "(" + response.data.cleaningcosts[i].discount + "% discount off)")
+                                if (response.data.cleaningcosts[i].discount != null) {
+                                    var Discount = response.data.cleaningcosts[i].discount / 100 * response.data.cleaningcosts[i].price
+                                    var AmountPayable = response.data.cleaningcosts[i].price - Discount
+                                    $("#EstPrice").text("Amount Payable :  ₦" + numberWithCommas(AmountPayable))
+                                } else {
+                                    $("#EstPrice").text("Amount Payable :  ₦" + numberWithCommas(response.data.cleaningcosts[i].price))
+                                }
+                                $("#Discount").val(response.data.cleaningcosts[i].discount)
+                                $("#Price").val(AmountPayable)
+                                $("#Frequency").val(response.data.cleaningcosts[i].frequency)
+
+                            }
+                        }
+                    }
+
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+
+            })
+
+        };
+
+        function SendEnquiry() {
+
+            var fullname = $("#Fullname").val()
+            var mobile = $("#Mobile").val()
+            var email = $("#Email").val()
+            var availableTime = $("#AvailableTime").val()
+            var availableDate = $("#AvailableDate").val()
+            var location = $("#Address2").val()
+            var serviceType = $("#ServiceType").val()
+            var detail = $("#Problem").val()
+
+            var query = `mutation {
+                            createRequestMaintain(fullname: "${fullname}", mobile: "${mobile}", email: "${email}", availableDate: "${availableDate}", availableTime: "${availableTime}", location: "${location}", serviceType: "${serviceType}", detail: "${detail}") {
+                            id
+                            fullname
+                            mobile
+                            email
+                            serviceType
+                            location
+                            detail
+                        }
+                        }`;
+            var Url = "https://us-central1-build-myhouse.cloudfunctions.net/bmhAPi/graphql?query=" + query
+
+
+            $.ajax({
+                method: 'POST',
+                url: Url,
+                //data: JSON.stringify({"query": query}),
+                contentType: 'application/json',
+                success: function (data) {
+                    RequestResponse("", "Your request has been sucessfully submitted..A member of BMH would get back to you soon", "success")
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+
+            })
+
+        };
+
+        function SendCleaningEnquiry() {
+
+            var fullname = $("#CFullname").val()
+            var mobile = $("#CMobile").val()
+            var email = $("#CEmail").val()
+            var availableTime = $("#CAvailableTime").val()
+            var availableDate = $("#CAvailableDate").val()
+            var location = $("#Address1").val()
+            var serviceType = "Cleaning"
+            var detail = $("#CProblem").val()
+
+            var apartmentType = $("#ApartmentType").val()
+            var cleaningType = $("#CleaningType").val()
+            var frequency = $("#Frequency").val()
+            var price = $("#Price").val()
+            var discount = $("#Discount").val()
+
+            var query = `mutation {
+                createRequestMaintain(fullname: "${fullname}", mobile: "${mobile}", email: "${email}", availableDate: "${availableDate}", availableTime: "${availableTime}", serviceType: "${serviceType}", location: "${location}", apartmentType: "${apartmentType}", cleaningType: "${cleaningType}", frequency: ${frequency}, price: ${price}, discount: ${discount}, detail: "${detail}" ) {
+                    id
+                    fullname
+                    mobile
+                    email
+                    location
+                    availableDate
+                    availableTime
+                    location
+                    apartmentType
+                    cleaningType
+                    frequency
+                    price
+                    discount
+                    detail
+                }
+                }`;
+            var Url = "https://us-central1-build-myhouse.cloudfunctions.net/bmhAPi/graphql?query=" + query
+
+
+            $.ajax({
+                method: 'POST',
+                url: Url,
+                //data: JSON.stringify({"query": query}),
+                contentType: 'application/json',
+                success: function (data) {
+                    MakePayment(price,email,mobile,fullname)
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+
+            })
+
+        };
+
+        function MakePayment(price,email,mobile,name) 
+        {
+
+            FlutterwaveCheckout({
+                public_key: "FLWPUBK_TEST-SANDBOXDEMOKEY-X",
+                tx_ref: "RX1",
+                amount: price,
+                currency: "NGN",
+                country: "NG",
+                payment_options: "Web",
+                redirect_url: // specified redirect URL
+                    "https://callbacks.piedpiper.com/flutterwave.aspx?ismobile=34",
+                meta: {
+                    consumer_id: mobile,
+                    consumer_mac: "92a3-912ba-1192a",
+                },
+                customer: {
+                    email: email,
+                    phone_number: mobile,
+                    name: name,
+                },
+                callback: function (data) {
+                    console.log(data);
+                },
+                onclose: function () {
+                    // close modal
+                },
+                customizations: {
+                    title: "My store",
+                    description: "Payment for cleaning service",
+                    logo: "https://buildmyhouseafrica.com/Images/blue-1.png",
+                },
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>

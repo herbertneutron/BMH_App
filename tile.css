@@ -1,0 +1,11 @@
+.box {
+    width: 30%;
+    display:inline-block;
+    margin:10px 0;
+    border-radius:5px;
+}
+
+#container {
+    white-space:nowrap;
+    text-align:center;
+}

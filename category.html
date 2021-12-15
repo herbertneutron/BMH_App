@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" class="isPWA">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <title>BMH | App</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fontawesome-all.min.css">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light" data-highlight="highlight-red" data-new-gr-c-s-check-loaded="14.1027.0"
+    data-gr-ext-installed="">
+    
+    <div id="page" data-swup="0">
+        <div class="header header-auto-show header-fixed header-logo-center">
+            <a href="#" class="header-title"><img width="30" src="Images/blue-1.png"></a>
+            <a onclick="javascript:window.history.back();"  class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+            <a href="#" data-toggle-theme="" class="header-icon header-icon-4 show-on-theme-dark"><i
+                    class="fas fa-sun"></i></a>
+            <a href="#" data-toggle-theme="" class="header-icon header-icon-4 show-on-theme-light"><i
+                    class="fas fa-moon"></i></a>
+            <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
+        </div>
+        <div id="footer-bar" class="footer-bar-6" style="
+                max-width:70%;
+                margin-left: 15%;
+                margin-bottom:2%;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 15px;
+                ">
+            <a href="https://buildmyhouseafrica.com/app/index.html" style="color:white"><i
+                    class="fa fa-home"></i><span>Home</span><em></em><strong><u></u></strong></a>
+            <a href="https://buildmyhouseafrica.com/app/category.html" style="color:white"
+                class="circle-nav active-nav"><i class="fas fa-shopping-cart"></i></i><span>Shop</span></a>
+
+            <a href="#" data-menu="menu-main" style="color:white"><i
+                    class="fas fa-user"></i></i><span>Profile</span></a>
+        </div>
+        <div class="page-title page-title-fixed">
+            <h1> <img width="40" src="Images/blue-1.png"></h1>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i
+                    class="fa fa-share-alt"></i></a>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light"
+                data-toggle-theme=""><i class="fa fa-moon"></i></a>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark"
+                data-toggle-theme=""><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+            <a onclick="javascript:window.history.back();"  class="page-title-icon shadow-xl bg-theme color-theme" ><i
+                    class="fa fa-arrow-left"></i></a>
+        </div>
+        <div class="page-title-clear"></div>
+        <div id="menu-mains" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            data-menu-load="menu-mains.html" style="display: block; width: 280px;">
+        </div>
+        <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            style="display: block; width: 280px;">
+            <div class="card rounded-0 bg-6" data-card-height="150" style="height: 150px;">
+                <div class="card-top">
+                    <a href="#" class="close-menu float-end me-2 text-center mt-3 icon-40 notch-clear"><i
+                            class="fa fa-times color-white"></i></a>
+                </div>
+                <div class="card-bottom">
+                    <h1 class="color-white ps-3 mb-n1 font-28"></h1>
+                    <p class="mb-2 ps-3 font-12 color-white opacity-50"></p>
+                </div>
+                <div class="card-overlay bg-gradient"></div>
+            </div>
+            <div class="mt-4"></div>
+            <h6 class="menu-divider">Library</h6>
+            <div class="list-group list-custom-small list-menu">
+                <a id="nav-welcome" href="#" class="active-nav">
+                    <i class="fa fa-heart gradient-red color-white"></i>
+                    <span>Welcome</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-homepages" href="index-homepages.html">
+                    <i class="fa fa-home gradient-green color-white"></i>
+                    <span>Homepages</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-components" href="index-components.html">
+                    <i class="fa fa-cog gradient-blue color-white"></i>
+                    <span>Components</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-pages" href="index-pages.html">
+                    <i class="fa fa-file gradient-brown color-white"></i>
+                    <span>Pages</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-media" href="index-projects.html">
+                    <i class="fa fa-camera gradient-magenta color-white"></i>
+                    <span>Media</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-contact" href="#">
+                    <i class="fa fa-envelope gradient-teal color-white"></i>
+                    <span>Contact</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-height="370"
+            style="display: block; height: 370px;">
+            <div class="menu-title">
+                <p class="color-highlight">Tap a link to</p>
+                <h1>Share</h1>
+                <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="divider divider-margins mt-3 mb-0"></div>
+            <div class="content mt-0">
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToFacebook">
+                        <i class="fab fa-facebook-f font-12 bg-facebook color-white shadow-l rounded-s"></i>
+                        <span>Facebook</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="https://twitter.com/share?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToTwitter">
+                        <i class="fab fa-twitter font-12 bg-twitter color-white shadow-l rounded-s"></i>
+                        <span>Twitter</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.enableds.com/products/appkit/v22/index.html&amp;title=AppKit BootStrap&amp;summary=&amp;source="
+                        class="external-link shareToLinkedIn">
+                        <i class="fab fa-linkedin-in font-12 bg-linkedin color-white shadow-l rounded-s"></i>
+                        <span>LinkedIn</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="whatsapp://send?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToWhatsApp">
+                        <i class="fab fa-whatsapp font-12 bg-whatsapp color-white shadow-l rounded-s"></i>
+                        <span>WhatsApp</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="mailto:?body=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToMail border-0">
+                        <i class="fa fa-envelope font-12 bg-mail color-white shadow-l rounded-s"></i>
+                        <span>Email</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-height="480"
+            style="display: block; height: 480px;">
+            <div class="menu-title">
+                <p class="color-highlight font-600">Choose your Favorite</p>
+                <h1>Highlight</h1>
+                <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="divider divider-margins mt-3 mb-2"></div>
+            <div class="content mt-0 ms-0 me-0">
+                <div class="row mb-0">
+                    <div class="col-6">
+                        <div class="list-group list-custom-small list-menu">
+                            <a href="#" data-change-highlight="blue">
+                                <i class="gradient-blue color-white"></i>
+                                <span>Blue</span>
+                            </a>
+                            <a href="#" data-change-highlight="red">
+                                <i class="gradient-red color-white"></i>
+                                <span>Red</span>
+                            </a>
+                            <a href="#" data-change-highlight="orange">
+                                <i class="gradient-orange color-white"></i>
+                                <span>Orange</span>
+                            </a>
+                            <a href="#" data-change-highlight="green">
+                                <i class="gradient-green color-white"></i>
+                                <span>Green</span>
+                            </a>
+                            <a href="#" data-change-highlight="yellow">
+                                <i class="gradient-yellow color-white"></i>
+                                <span>Yellow</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="list-group list-custom-small list-menu">
+                            <a href="#" data-change-highlight="dark">
+                                <i class="gradient-dark color-white"></i>
+                                <span>Dark</span>
+                            </a>
+                            <a href="#" data-change-highlight="gray">
+                                <i class="gradient-gray color-white"></i>
+                                <span>Gray</span>
+                            </a>
+                            <a href="#" data-change-highlight="teal">
+                                <i class="gradient-teal color-white"></i>
+                                <span>Teal</span>
+                            </a>
+                            <a href="#" data-change-highlight="magenta">
+                                <i class="gradient-magenta color-white"></i>
+                                <span>Plum</span>
+                            </a>
+                            <a href="#" data-change-highlight="brown">
+                                <i class="gradient-brown color-white"></i>
+                                <span>Brown</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider divider-margins mt-2"></div>
+            <a href="#"
+                class="close-menu btn btn-margins btn-m font-13 rounded-s shadow-xl btn-full gradient-highlight border-0 font-700 text-uppercase">Awesome</a>
+        </div>
+        <div class="page-content">
+            <br>
+            <a href="#">
+                <div class="card card-style">
+                    <div class="">
+
+                        <div>
+                            <input type="text" class="font-700 mb-2"
+                                style="margin-left:10px;width:100%;border: none;margin-top: 10px;" placeholder="Search">
+                        </div>
+
+                    </div>
+                </div>
+            </a>
+
+            <div class="card card-style shadow-xl" style="margin-bottom: 0px;background-image: url('Images/15.jpeg');">
+                <div class="content">
+
+                    <h1 class="font-24 font-700 mb-2" style="color: white !important;margin-top:50%;"></h1>
+
+                </div>
+            </div>
+
+            <br />
+            <h5 style="margin-left:5%;">Categories</h5>
+            <br />
+            <div class="row mb-0">
+                <a href="https://buildmyhouseafrica.com/app/productsection.html?id=living%20room" class="col-6 pe-0">
+                    <div class="card mr-0 card-style" style="margin-bottom: 0px;background-image: url('Images/Livingroom.JPG')">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Living room</p>
+                </a>
+                <a href="#" class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/Dinner.JPG');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Kitchen & Dining </p>
+                </a>
+            </div>
+            <br>
+            <div class="row mb-0">
+                <a href="#" class="col-6 pe-0">
+                    <div class="card mr-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/4.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;"> Bedroom</p>
+                </a>
+                <a href="#" class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/11.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Bath</p>
+                </a>
+            </div>
+            <br />
+            <div class="row mb-0">
+                <a href="https://buildmyhouseafrica.com/app/productsection.html" class="col-6 pe-0">
+                    <div class="card mr-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/2.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Home Office</p>
+                </a>
+                <a href="#" class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/7.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Home Decor</p>
+                </a>
+            </div>
+            <br />
+            <!-- <div class="row mb-0">
+                <a href="#" class="col-6 pe-0">
+                    <div class="card mr-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/10.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Lighting</p>
+                </a>
+                <a href="#" class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/1.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Outdoor</p>
+                </a>
+            </div>
+            <br />
+            <div class="row mb-0">
+                <a href="https://buildmyhouseafrica.com/app/productsection.html" class="col-6 pe-0">
+                    <div class="card mr-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/2.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Entry way</p>
+                </a>
+                <a href="#" class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/7.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Baby & Kids</p>
+                </a>
+            </div>
+            <br />
+            <div class="row mb-0">
+                <a href="#" class="col-6 pe-0">
+                    <div class="card mr-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/10.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Rugs</p>
+                </a>
+                <a href="#" class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/1.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Decorative accesories</p>
+                </a>
+            </div>
+            <div class="row mb-0">
+                <a href="#" class="col-6 pe-0">
+                    <div class="card mr-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/10.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br> </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Windows</p>
+                </a>
+                <a href="#" class="col-6 ps-0">
+                    <div class="card ml-0 card-style"
+                        style="margin-bottom: 0px;background-image: url('Images/1.jpeg');">
+                        <div class="d-flex pt-3 pb-3" style="margin-top:80%;">
+
+                            <div class="align-self-center">
+                                <h5 class="ps-2 ms-1 mb-0" style="color: white !important;"><br></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p style="margin-left:15%;margin-bottom: 0px;">Art & Mirrors</p>
+                </a>
+            </div> -->
+            
+        </div>
+
+
+
+        <div id="menu-share" class="menu menu-box-bottom menu-box-detached" style="display: block;">
+            <div class="menu-title mt-n1">
+                <p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#"
+                    class="close-menu"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="content mb-0">
+                <div class="divider mb-0"></div>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToFacebook external-link">
+                        <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                        <span class="font-13">Facebook</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="https://twitter.com/share?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToTwitter external-link">
+                        <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                        <span class="font-13">Twitter</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.enableds.com/products/appkit/v22/index.html&amp;title=AppKit BootStrap&amp;summary=&amp;source="
+                        class="shareToLinkedIn external-link">
+                        <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                        <span class="font-13">LinkedIn</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="whatsapp://send?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToWhatsApp external-link">
+                        <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                        <span class="font-13">WhatsApp</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="mailto:?body=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToMail external-link border-0">
+                        <i class="font-18 fa fa-envelope-square color-mail"></i>
+                        <span class="font-13">Email</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <script>
+        function checkIsMobile() {
+            if (navigator.userAgent.indexOf("Mobile") > 0) {
+                return true;
+            } else {
+                // alert('We currently run ONLY on mobile ')
+                //window.location.href = "https://buildmyhouseafrica.com/";
+                return true;
+            }
+        }
+
+        checkIsMobile()
+    </script>
+
+</body>
+
+</html>

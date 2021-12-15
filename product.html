@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en" class="isPWA">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <title>BMH | App</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="tile.css" media="all">
+    <link rel="stylesheet" href="cache-3008b.css" media="all">
+    <link rel="stylesheet" id="zoya-google-fonts-css"
+        href="https://fonts.googleapis.com/css?family=Cormorant+Garamond%3A300%2C300i%2C400%2C500%2C600%2C700%2C800%7CMontserrat%3A300%2C300i%2C400%2C500%2C600%2C700%2C800&amp;subset=latin-ext&amp;display=swap&amp;ver=1.0.0"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="cache-260eb.css" media="all">
+    <link rel="stylesheet" id="google-fonts-1-css"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.8"
+        type="text/css" media="all">
+    <link rel="stylesheet" type="text/css" href="fontawesome-all.min.css">
+    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light" data-highlight="highlight-red" data-new-gr-c-s-check-loaded="14.1027.0"
+    data-gr-ext-installed="">
+    <!-- <div id="preloader" class="preloader-hide">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div> -->
+    <div id="page" data-swup="0">
+        <div class="header header-auto-show header-fixed header-logo-center">
+            <a href="#" class="header-title"><img width="30" src="Images/blue-1.png"></a>
+            <a onclick="javascript:window.history.back();"  class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+           
+            <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
+        </div>
+        <div id="footer-bar" class="footer-bar-6" style="
+                max-width:70%;
+                margin-left: 15%;
+                margin-bottom:2%;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 15px;
+                ">
+            <a href="https://buildmyhouseafrica.com/app/index.html" style="color:white"><i
+                    class="fa fa-home"></i><span>Home</span><em></em><strong><u></u></strong></a>
+            <a href="https://buildmyhouseafrica.com/app/category.html" style="color:white"
+                ><i class="fas fa-shopping-cart"></i></i><span>Shop</span></a>
+
+            <a href="#" data-menu="menu-main" style="color:white"><i
+                    class="fas fa-user"></i></i><span>Profile</span></a>
+        </div>
+        <div class="page-title page-title-fixed">
+            <h1 style=" margin-top: 0px;"> <img width="40" src="Images/blue-1.png"></h1>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i
+                    class="fa fa-share-alt"></i></a>
+           
+            <a onclick="javascript:window.history.back();"class="page-title-icon shadow-xl bg-theme color-theme"><i
+                    class="fa fa-arrow-left"></i></a>
+        </div>
+        <div class="page-title-clear"></div>
+        <div id="menu-mains" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            data-menu-load="menu-mains.html" style="display: block; width: 280px;">
+        </div>
+        <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            style="display: block; width: 280px;">
+            <div class="card rounded-0 bg-6" data-card-height="150" style="height: 150px;">
+                <div class="card-top">
+                    <a href="#" class="close-menu float-end me-2 text-center mt-3 icon-40 notch-clear"><i
+                            class="fa fa-times color-white"></i></a>
+                </div>
+                <div class="card-bottom">
+                    <h1 class="color-white ps-3 mb-n1 font-28"></h1>
+                    <p class="mb-2 ps-3 font-12 color-white opacity-50"></p>
+                </div>
+                <div class="card-overlay bg-gradient"></div>
+            </div>
+            <div class="mt-4"></div>
+            <h6 class="menu-divider">Library</h6>
+            <div class="list-group list-custom-small list-menu">
+                <a id="nav-welcome" href="#" class="active-nav">
+                    <i class="fa fa-heart gradient-red color-white"></i>
+                    <span>Welcome</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-homepages" href="index-homepages.html">
+                    <i class="fa fa-home gradient-green color-white"></i>
+                    <span>Homepages</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-components" href="index-components.html">
+                    <i class="fa fa-cog gradient-blue color-white"></i>
+                    <span>Components</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-pages" href="index-pages.html">
+                    <i class="fa fa-file gradient-brown color-white"></i>
+                    <span>Pages</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-media" href="index-projects.html">
+                    <i class="fa fa-camera gradient-magenta color-white"></i>
+                    <span>Media</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a id="nav-contact" href="#">
+                    <i class="fa fa-envelope gradient-teal color-white"></i>
+                    <span>Contact</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+        <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-height="370"
+            style="display: block; height: 370px;">
+            <div class="menu-title">
+                <p class="color-highlight">Tap a link to</p>
+                <h1>Share</h1>
+                <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="divider divider-margins mt-3 mb-0"></div>
+            <div class="content mt-0">
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToFacebook">
+                        <i class="fab fa-facebook-f font-12 bg-facebook color-white shadow-l rounded-s"></i>
+                        <span>Facebook</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="https://twitter.com/share?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToTwitter">
+                        <i class="fab fa-twitter font-12 bg-twitter color-white shadow-l rounded-s"></i>
+                        <span>Twitter</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.enableds.com/products/appkit/v22/index.html&amp;title=AppKit BootStrap&amp;summary=&amp;source="
+                        class="external-link shareToLinkedIn">
+                        <i class="fab fa-linkedin-in font-12 bg-linkedin color-white shadow-l rounded-s"></i>
+                        <span>LinkedIn</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="whatsapp://send?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToWhatsApp">
+                        <i class="fab fa-whatsapp font-12 bg-whatsapp color-white shadow-l rounded-s"></i>
+                        <span>WhatsApp</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="mailto:?body=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToMail border-0">
+                        <i class="fa fa-envelope font-12 bg-mail color-white shadow-l rounded-s"></i>
+                        <span>Email</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="menu-colors" class="menu menu-box-bottom rounded-m" data-menu-height="480"
+            style="display: block; height: 480px;">
+            <div class="menu-title">
+                <p class="color-highlight font-600">Choose your Favorite</p>
+                <h1>Highlight</h1>
+                <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="divider divider-margins mt-3 mb-2"></div>
+            <div class="content mt-0 ms-0 me-0">
+                <div class="row mb-0">
+                    <div class="col-6">
+                        <div class="list-group list-custom-small list-menu">
+                            <a href="#" data-change-highlight="blue">
+                                <i class="gradient-blue color-white"></i>
+                                <span>Blue</span>
+                            </a>
+                            <a href="#" data-change-highlight="red">
+                                <i class="gradient-red color-white"></i>
+                                <span>Red</span>
+                            </a>
+                            <a href="#" data-change-highlight="orange">
+                                <i class="gradient-orange color-white"></i>
+                                <span>Orange</span>
+                            </a>
+                            <a href="#" data-change-highlight="green">
+                                <i class="gradient-green color-white"></i>
+                                <span>Green</span>
+                            </a>
+                            <a href="#" data-change-highlight="yellow">
+                                <i class="gradient-yellow color-white"></i>
+                                <span>Yellow</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="list-group list-custom-small list-menu">
+                            <a href="#" data-change-highlight="dark">
+                                <i class="gradient-dark color-white"></i>
+                                <span>Dark</span>
+                            </a>
+                            <a href="#" data-change-highlight="gray">
+                                <i class="gradient-gray color-white"></i>
+                                <span>Gray</span>
+                            </a>
+                            <a href="#" data-change-highlight="teal">
+                                <i class="gradient-teal color-white"></i>
+                                <span>Teal</span>
+                            </a>
+                            <a href="#" data-change-highlight="magenta">
+                                <i class="gradient-magenta color-white"></i>
+                                <span>Plum</span>
+                            </a>
+                            <a href="#" data-change-highlight="brown">
+                                <i class="gradient-brown color-white"></i>
+                                <span>Brown</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider divider-margins mt-2"></div>
+            <a href="#"
+                class="close-menu btn btn-margins btn-m font-13 rounded-s shadow-xl btn-full gradient-highlight border-0 font-700 text-uppercase">Awesome</a>
+        </div>
+        <div class="page-content">
+
+            <div id="qodef-page-outer">
+                <div id="qodef-page-inner" class="qodef-content-grid" style="padding-top: 0px;">
+                    <main id="qodef-page-content" class="qodef-grid qodef-layout--template qodef--no-bottom-space ">
+                        <div class="qodef-grid-inner clear">
+                            <div id="qodef-woo-page"
+                                class="qodef-grid-item qodef--single qodef-popup--magnific-popup qodef-magnific-popup qodef-popup-gallery">
+                                
+                                <div id="product"
+                                    class="product type-product post-27 status-publish first instock product_cat-inspiration product_cat-lifestyle product_tag-decor product_tag-furniture product_tag-natural has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                    <div class="qodef-woo-single-inner">
+                                        <div class="qodef-woo-single-image">
+                                            <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-3 images qodef-position--left"
+                                                data-columns="3"
+                                                style="opacity: 1; transition: opacity 0.25s ease-in-out 0s;">
+                                                <figure class="woocommerce-product-gallery__wrapper">
+                                                    <div data-thumb="Image0"
+                                                        data-thumb-alt="aa" class="woocommerce-product-gallery__image"
+                                                        style="position: relative; overflow: hidden;"><a
+                                                            href="Image0"
+                                                            data-type="image" class="qodef-popup-item"><img width="600"
+                                                                height="450"
+                                                                src="Image0"
+                                                                class="wp-post-image" alt="aa" title="shop-img-1"
+                                                                ></a><img
+                                                            role="presentation" alt="aa"
+                                                            src="Image0"
+                                                            class="zoomImg"
+                                                            style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 800px; height: 600px; border: none; max-width: none; max-height: none;">
+                                                    </div>
+                                                    <div class="qodef-woo-thumbnails-wrapper">
+                                                        <div data-thumb="Image1"
+                                                            data-thumb-alt="aa"
+                                                            class="woocommerce-product-gallery__image"><a
+                                                                href="Image1"
+                                                                data-type="image" class="qodef-popup-item"><img
+                                                                    width="300" height="222"
+                                                                    src="Image1"
+                                                                    class="" alt="aa" title="shop-img-1-gallery-1"
+                                                                    data-caption=""
+                                                                    data-src="Image1"
+                                                                    data-large_image="Image1"
+                                                                    ></a>
+                                                                </div>
+                                                        <div data-thumb="Image2"
+                                                            data-thumb-alt="aa"
+                                                            class="woocommerce-product-gallery__image"><a
+                                                                href="Image2"
+                                                                data-type="image" class="qodef-popup-item"><img
+                                                                    width="300" height="222"
+                                                                    src="Image2"
+                                                                    class="" alt="aa" title="shop-img-1-gallery-3"
+                                                                    data-caption=""
+                                                                    data-src="Image2"
+                                                                    data-large_image="Image2"></a></div>
+                                                        <div data-thumb="Image3"
+                                                            data-thumb-alt="aa"
+                                                            class="woocommerce-product-gallery__image"><a
+                                                                href="Image3"
+                                                                data-type="image" class="qodef-popup-item"><img
+                                                                    width="300" height="222"
+                                                                    src="Image3"
+                                                                    class="" alt="aa" title="shop-img-1-gallery-2"
+                                                                    data-caption=""
+                                                                    data-src="Image3"
+                                                                    data-large_image="Image3"></a></div>
+                                                    </div>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <div class="summary entry-summary">
+                                            <h6 class="qodef-woo-product-title product_title entry-title">ProductName
+                                            </h6>
+                                            <div class="woocommerce-product-rating">
+                                                <div class="qodef-woo-ratings qodef-m">
+                                                    <div class="qodef-m-inner">
+                                                        <div class="qodef-m-star qodef--initial"><svg
+                                                                class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg><svg class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg><svg class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg><svg class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg><svg class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg></div>
+                                                        <div class="qodef-m-star qodef--active" style="width:73.4%"><svg
+                                                                class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg><svg class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg><svg class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg><svg class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg><svg class="qodef-m-star-item"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                                                y="0px" width="9.47px" height="9.02px"
+                                                                viewBox="0 0 9.47 9.02"
+                                                                enable-background="new 0 0 9.47 9.02"
+                                                                xml:space="preserve">
+                                                                <g>
+                                                                    <path stroke-width="0.1" stroke-miterlimit="10"
+                                                                        d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                    </path>
+                                                                </g>
+                                                            </svg></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="price"><span class="woocommerce-Price-amount amount"><bdi><span
+                                                            class="woocommerce-Price-currencySymbol">₦</span>ProductPrice</bdi></span>
+                                            </p>
+                                            <div class="woocommerce-product-details__short-description">
+                                                <p>
+                                                    <!-- description of item goes here -->
+                                                </p>
+                                            </div>
+                                            <form class="cart"
+                                                action="https://zoya.qodeinteractive.com/product/blue-armchair/"
+                                                method="post" enctype="multipart/form-data">
+                                                <div class="qodef-quantity-buttons quantity">
+                                                    <label class="screen-reader-text" for="count">Blue
+                                                        Armchair quantity</label>
+                                                    <span class="qodef-quantity-minus"
+                                                        onclick="ReduceQuantity()"></span>
+                                                    <input type="text" id="count"
+                                                        class="input-text qty text qodef-quantity-input" data-step="1"
+                                                        data-min="1" data-max="" name="quantity" value="1" title="Qty"
+                                                        size="4" placeholder="" inputmode="numeric">
+                                                    <span class="qodef-quantity-plus" onclick="AddQuantity()"></span>
+                                                </div>
+                                                <button type="submit" name="add-to-cart" value="27"
+                                                    class="single_add_to_cart_button button alt">Add to cart</button>
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <!-- <section class="related products">
+                                        <h6>Related products</h6>
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-container elementor-column-gap-default">
+                                                <div>
+                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                        <div class="elementor-element elementor-element-ebfb4e5 elementor-widget elementor-widget-zoya_core_product_list"
+                                                            data-id="ebfb4e5" data-element_type="widget"
+                                                            data-widget_type="zoya_core_product_list.default">
+                                                            <div class="elementor-widget-container"
+                                                                style="margin-top:0px;">
+                                                                <div class="qodef-shortcode qodef-m  qodef-woo-shortcode qodef-woo-product-list qodef-item-layout--info-below qodef-alignment--center qodef-product-mark--right qodef-grid qodef-layout--columns  qodef-gutter--normal qodef-col-num--4 qodef-item-layout--info-below qodef--no-bottom-space qodef-pagination--off qodef-responsive--custom qodef-col-num--1440--4 qodef-col-num--1366--4 qodef-col-num--1024--2 qodef-col-num--768--2 qodef-col-num--680--1 qodef-col-num--480--1"
+                                                                    data-options="{&quot;plugin&quot;:&quot;zoya_core&quot;,&quot;module&quot;:&quot;plugins\/woocommerce\/shortcodes&quot;,&quot;shortcode&quot;:&quot;product-list&quot;,&quot;post_type&quot;:&quot;product&quot;,&quot;next_page&quot;:&quot;2&quot;,&quot;max_pages_num&quot;:1,&quot;enable_rating&quot;:&quot;yes&quot;,&quot;content_alignment&quot;:&quot;center&quot;,&quot;product_mark_position&quot;:&quot;right&quot;,&quot;behavior&quot;:&quot;columns&quot;,&quot;images_proportion&quot;:&quot;full&quot;,&quot;columns&quot;:&quot;4&quot;,&quot;columns_responsive&quot;:&quot;custom&quot;,&quot;columns_1440&quot;:&quot;4&quot;,&quot;columns_1366&quot;:&quot;4&quot;,&quot;columns_1024&quot;:&quot;2&quot;,&quot;columns_768&quot;:&quot;2&quot;,&quot;columns_680&quot;:&quot;1&quot;,&quot;columns_480&quot;:&quot;1&quot;,&quot;space&quot;:&quot;normal&quot;,&quot;posts_per_page&quot;:&quot;4&quot;,&quot;orderby&quot;:&quot;date&quot;,&quot;order&quot;:&quot;DESC&quot;,&quot;additional_params&quot;:&quot;tax&quot;,&quot;tax&quot;:&quot;product_tag&quot;,&quot;tax_slug&quot;:&quot;natural&quot;,&quot;layout&quot;:&quot;info-below&quot;,&quot;title_tag&quot;:&quot;h6&quot;,&quot;pagination_type&quot;:&quot;no-pagination&quot;,&quot;object_class_name&quot;:&quot;ZoyaCore_Product_List_Shortcode&quot;,&quot;taxonomy_filter&quot;:&quot;product_cat&quot;,&quot;additional_query_args&quot;:{&quot;tax_query&quot;:[{&quot;taxonomy&quot;:&quot;product_tag&quot;,&quot;field&quot;:&quot;slug&quot;,&quot;terms&quot;:&quot;natural&quot;}]},&quot;space_value&quot;:15}">
+
+                                                                    <div class="qodef-grid-inner clear">
+                                                                        <div
+                                                                            class="qodef-e qodef-grid-item qodef-item--full product type-product post-36 status-publish last instock product_cat-lifestyle product_tag-decor product_tag-minimal product_tag-natural product_tag-storage has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                                                            <div class="qodef-woo-product-inner">
+                                                                                <div class="qodef-woo-product-image">
+                                                                                    <img width="800" height="932"
+                                                                                        src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-2.jpg"
+                                                                                        class="attachment-full size-full"
+                                                                                        alt="aa"
+                                                                                        srcset="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-2.jpg 800w, https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-2-300x350.jpg 300w, https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-2-600x699.jpg 600w, https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-2-258x300.jpg 258w, https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-2-768x895.jpg 768w"
+                                                                                        sizes="(max-width: 800px) 100vw, 800px">
+                                                                                    <div
+                                                                                        class="qodef-woo-product-image-inner">
+                                                                                        <a onclick="PayOnline(this.id)"
+                                                                                            id="59" data-quantity="1"
+                                                                                            class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                            data-product_id="36"
+                                                                                            data-product_sku="002"
+                                                                                            aria-label="Add “Ceramic Jar” to your cart"
+                                                                                            rel="nofollow">Buy</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="qodef-woo-product-content">
+                                                                                    <h6 itemprop="name"
+                                                                                        class="qodef-woo-product-title entry-title">
+                                                                                        <a itemprop="url"
+                                                                                            class="qodef-woo-product-title-link"
+                                                                                            href="#">
+                                                                                            Ceramic Jar </a>
+                                                                                    </h6>
+                                                                                    <div
+                                                                                        class="qodef-woo-product-price price">
+                                                                                        <span
+                                                                                            class="woocommerce-Price-amount amount"><span
+                                                                                                class="woocommerce-Price-currencySymbol">₦</span>59.00</span>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="qodef-woo-ratings qodef-m">
+                                                                                        <div class="qodef-m-inner">
+                                                                                            <div
+                                                                                                class="qodef-m-star qodef--initial">
+                                                                                                <svg class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="nebluew 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg>
+                                                                                            </div>
+                                                                                            <div class="qodef-m-star qodef--active"
+                                                                                                style="width:80%"><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a href="#"
+                                                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div
+                                                                            class="qodef-e qodef-grid-item qodef-item--full new product type-product post-1620 status-publish first instock product_cat-inspiration product_cat-lifestyle product_tag-furniture product_tag-natural has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                                                                            <div class="qodef-woo-product-inner">
+                                                                                <div class="qodef-woo-product-image">
+                                                                                    <span
+                                                                                        class="qodef-woo-product-mark qodef-new">New</span>
+                                                                                    <img width="800" height="932"
+                                                                                        src="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-27.jpg"
+                                                                                        class="attachment-full size-full"
+                                                                                        alt="aa"
+                                                                                        srcset="https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-27.jpg 800w, https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-27-300x350.jpg 300w, https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-27-600x699.jpg 600w, https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-27-258x300.jpg 258w, https://zoya.qodeinteractive.com/wp-content/uploads/2021/04/shop-list-img-27-768x895.jpg 768w"
+                                                                                        sizes="(max-width: 800px) 100vw, 800px">
+                                                                                    <div
+                                                                                        class="qodef-woo-product-image-inner">
+                                                                                        <a onclick="PayOnline(this.id)"
+                                                                                            id="178" data-quantity="1"
+                                                                                            class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                                                                            data-product_id="1620"
+                                                                                            data-product_sku="023"
+                                                                                            aria-label="Add “Wooden Chair” to your cart"
+                                                                                            rel="nofollow">Buy</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="qodef-woo-product-content">
+                                                                                    <h6 itemprop="name"
+                                                                                        class="qodef-woo-product-title entry-title">
+                                                                                        <a itemprop="url"
+                                                                                            class="qodef-woo-product-title-link"
+                                                                                            href="#">
+                                                                                            Wooden Chair </a>
+                                                                                    </h6>
+                                                                                    <div
+                                                                                        class="qodef-woo-product-price price">
+                                                                                        <span
+                                                                                            class="woocommerce-Price-amount amount"><span
+                                                                                                class="woocommerce-Price-currencySymbol">₦</span>178.00</span>
+                                                                                    </div>
+                                                                                    <div
+                                                                                        class="qodef-woo-ratings qodef-m">
+                                                                                        <div class="qodef-m-inner">
+                                                                                            <div
+                                                                                                class="qodef-m-star qodef--initial">
+                                                                                                <svg class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg>
+                                                                                            </div>
+                                                                                            <div class="qodef-m-star qodef--active"
+                                                                                                style="width:80%"><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg><svg
+                                                                                                    class="qodef-m-star-item"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                                    x="0px" y="0px"
+                                                                                                    width="9.47px"
+                                                                                                    height="9.02px"
+                                                                                                    viewBox="0 0 9.47 9.02"
+                                                                                                    enable-background="new 0 0 9.47 9.02"
+                                                                                                    xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path
+                                                                                                            stroke-width="0.1"
+                                                                                                            stroke-miterlimit="10"
+                                                                                                            d="M6.48,5.55l1.08,3.3L4.74,6.81L1.93,8.84L3,5.55 L0.19,3.5h3.48l1.07-3.31L5.82,3.5H9.3L6.48,5.55z">
+                                                                                                        </path>
+                                                                                                    </g>
+                                                                                                </svg></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <a href="#"
+                                                                                    class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section> -->
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="menu-share" class="menu menu-box-bottom menu-box-detached" style="display: block;">
+            <div class="menu-title mt-n1">
+                <p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#"
+                    class="close-menu"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="content mb-0">
+                <div class="divider mb-0"></div>
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToFacebook external-link">
+                        <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                        <span class="font-13">Facebook</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="https://twitter.com/share?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToTwitter external-link">
+                        <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                        <span class="font-13">Twitter</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.enableds.com/products/appkit/v22/index.html&amp;title=AppKit BootStrap&amp;summary=&amp;source="
+                        class="shareToLinkedIn external-link">
+                        <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                        <span class="font-13">LinkedIn</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="whatsapp://send?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToWhatsApp external-link">
+                        <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                        <span class="font-13">WhatsApp</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                    <a href="mailto:?body=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="shareToMail external-link border-0">
+                        <i class="font-18 fa fa-envelope-square color-mail"></i>
+                        <span class="font-13">Email</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <script>
+        function checkIsMobile() {
+            if (navigator.userAgent.indexOf("Mobile") > 0) {
+                return true;
+            } else {
+                // alert('We currently run ONLY on mobile ')
+                //window.location.href = "https://buildmyhouseafrica.com/";
+                return true;
+            }
+        }
+
+        checkIsMobile()
+
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
+
+        function ViewProduct() {
+            var id = getUrlVars()
+            var productId = id.id
+
+            $('#loader').show()
+            var query = `{
+                    products(category: "living room"){
+                    id
+                    name
+                    description
+                    price
+                    category
+                    subcategory
+                    imageCollection{
+                        url
+                        name
+                        id
+                    }
+                    }
+                }`;
+            var Url = "https://us-central1-build-myhouse.cloudfunctions.net/bmhAPi/graphql?query=" + query
+
+
+            $.ajax({
+                method: 'POST',
+                url: Url,
+                //data: JSON.stringify({"query": query}),
+                contentType: 'application/json',
+                success: function (response) {
+                    console.log(response);
+                    if (response.data.products.length > 0) {
+                        for (var i = 0; i < response.data.products.length; i++) {
+
+                            var product = response.data.products[i]
+                            if (product.id == productId ) 
+                            {
+                                var price = numberWithCommas(product.price)
+                                $('#product').children().each(function(){
+                                $(this).html($(this).html().replace(/Image0/g,product.imageCollection[0].url));
+                                $(this).html($(this).html().replace(/Image1/g,product.imageCollection[1].url)); 
+                                $(this).html($(this).html().replace(/Image2/g,product.imageCollection[2].url)); 
+                                $(this).html($(this).html().replace(/Image3/g,product.imageCollection[3].url)); 
+                                $(this).html($(this).html().replace(/ProductName/g,product.name)); 
+                                $(this).html($(this).html().replace(/ProductPrice/g,price)); 
+                                
+                               });
+                            }
+
+                        }
+
+                    }
+
+
+
+
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+
+            })
+
+        };
+        ViewProduct()
+        function AddQuantity() {
+            $('#count').val(parseInt($('#count').val()) + 1)
+        }
+        function ReduceQuantity() {
+            $('#count').val(parseInt($('#count').val()) - 1)
+        }
+
+
+    </script>
+
+</body>
+
+</html>
