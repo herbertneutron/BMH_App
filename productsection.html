@@ -47,7 +47,7 @@
             <a href="https://buildmyhouseafrica.com/app/category.html" style="color:white"
                 class="circle-nav active-nav"><i class="fas fa-shopping-cart"></i></i><span>Shop</span></a>
 
-            <a href="#" data-menu="menu-main" style="color:white"><i
+            <a href="#"  style="color:white"><i
                     class="fas fa-user"></i></i><span>Profile</span></a>
         </div>
         <div class="page-title page-title-fixed">
@@ -383,6 +383,7 @@
                 //data: JSON.stringify({"query": query}),
                 contentType: 'application/json',
                 success: function (response) {
+                    console.log(response)
                     if (response.data.products.length > 0) {
                         $('#loader').hide()
                         var subcategory = categorize(response.data.products)
@@ -391,7 +392,7 @@
                             var product = subcategory[i]
                             if (product.imageCollection.length > 0) {
                                 var price = numberWithCommas(product.price)
-                                $('#productType').append('<div class="qodef-e qodef-grid-item qodef-item--full product type-product post-1619 status-publish first instock product_cat-inspiration product_cat-lifestyle product_tag-decor product_tag-furniture product_tag-natural has-post-thumbnail shipping-taxable purchasable product-type-simple"><div class="qodef-woo-product-inner"><div class="qodef-woo-product-image"><img width="800" height="932"src="' + product.imageCollection[0].url + '"class="attachment-full size-full" alt="aa" srcset="" sizes="(max-width: 800px) 100vw, 800px"></div><div class="qodef-woo-product-content"><h6 itemprop="name"class="qodef-woo-product-title entry-title"><a itemprop="url" class="qodef-woo-product-title-link" href="https://buildmyhouseafrica.com/app/products.html?category=' + product.category + "&"+ "subcategory="+product.subcategory+'">' + product.name + '</a> </h6> <br /><span style="top: 70%;"href="https://buildmyhouseafrica.com/app/products.html?category=' + product.category + "&"+ "subcategory="+product.subcategory+'"class="qodef-woo-product-mark qodef-new">SEE MORE</span> </div> <a href="https://buildmyhouseafrica.com/app/products.html?category=' + product.category + "&"+ "subcategory="+product.subcategory+'"class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a> </div></div>');
+                                $('#productType').append('<div class="qodef-e qodef-grid-item qodef-item--full product type-product post-1619 status-publish first instock product_cat-inspiration product_cat-lifestyle product_tag-decor product_tag-furniture product_tag-natural has-post-thumbnail shipping-taxable purchasable product-type-simple"><div class="qodef-woo-product-inner"><div class="qodef-woo-product-image"><img width="800" height="932"src="' + product.imageCollection[0].url + '"class="attachment-full size-full" alt="aa" srcset="" sizes="(max-width: 800px) 100vw, 800px"></div><div class="qodef-woo-product-content"><h6 itemprop="name"class="qodef-woo-product-title entry-title"><a itemprop="url" class="qodef-woo-product-title-link" href="https://buildmyhouseafrica.com/app/products.html?category=' + product.category + "&"+ "subcategory="+product.subcategory+'">' + product.subcategory + '</a> </h6> <br /><span style="top: 70%;"href="https://buildmyhouseafrica.com/app/products.html?category=' + product.category + "&"+ "subcategory="+product.subcategory+'"class="qodef-woo-product-mark qodef-new">SEE MORE</span> </div> <a href="https://buildmyhouseafrica.com/app/products.html?category=' + product.category + "&"+ "subcategory="+product.subcategory+'"class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a> </div></div>');
                             }
 
                         }

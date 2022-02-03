@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="isPWA">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <title>BMH | App</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="tile.css" media="all">
+    <link rel="stylesheet" href="cache-3008b.css" media="all">
+    <link rel="stylesheet" id="zoya-google-fonts-css"
+        href="https://fonts.googleapis.com/css?family=Cormorant+Garamond%3A300%2C300i%2C400%2C500%2C600%2C700%2C800%7CMontserrat%3A300%2C300i%2C400%2C500%2C600%2C700%2C800&amp;subset=latin-ext&amp;display=swap&amp;ver=1.0.0"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="cache-260eb.css" media="all">
+    <link rel="stylesheet" id="google-fonts-1-css"
+        href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.8"
+        type="text/css" media="all">
+        <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="cart/css/style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome-all.min.css">
+    <link rel="manifest" href="manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light" data-highlight="highlight-red" data-new-gr-c-s-check-loaded="14.1027.0"
+    data-gr-ext-installed="">
+    <!-- <div id="preloader" class="preloader-hide">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div> -->
+    <div id="page" data-swup="0">
+        <div class="header header-auto-show header-fixed header-logo-center">
+            <a href="#" class="header-title"><img width="30" src="Images/blue-1.png"></a>
+            <a href="#" onclick="javascript:window.history.back();"  class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+
+            <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
+        </div>
+        <div id="footer-bar" class="footer-bar-6" style="
+                max-width:80%;
+                margin-left: 10%;
+                margin-bottom:2%;
+                background: black;
+                z-index:1;
+                 ">
+            <a href="#" onclick="MakePayment()" style="background: transparent!important;color: white !important;" class=" single_add_to_cart_button button "> Make Payment</a>
+                    
+        </div>
+        <div class="page-title page-title-fixed" style="z-index: 1!important;margin-top: 1%!important;background:white!important">
+            <h1 style=" margin-top: 0px;"> <img width="40" src="Images/blue-1.png"></h1>
+                                   
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i
+                    class="fa fa-share-alt"></i></a>
+            <a onclick="javascript:window.history.back();"  class="page-title-icon shadow-xl bg-theme color-theme"><i class="fa fa-arrow-left"></i></a>
+        </div>
+        <div class="page-title-clear"></div>
+       
+        <div class="page-content">
+            <div class="content mb-0 mt-0">
+                
+                <div class="input-style has-borders no-icon mb-4">
+                    <input type="text" class="form-control validate-text" id="Fullname"  placeholder="Full name">
+    
+                </div>
+                <div class="input-style has-borders no-icon mb-4">
+                    <input type="email" class="form-control validate-text" id="Email" placeholder="Email">
+    
+                </div>
+                <div class="input-style has-borders no-icon mb-4">
+                    <input type="text" class="form-control validate-text" id="Amount" readonly>
+    
+                </div>
+                <div class="input-style has-borders no-icon mb-4">
+                    <input type="text" class="form-control validate-text" id="Mobile" placeholder="Mobile">
+    
+                </div>
+            </div>
+        </div>
+     </div>
+    
+  </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyD1eGdP6hCYQ06z86dMEwoLNFMPYPbhgYs&amp"></script>
+    <script src="cart/js/util.js"></script>
+
+    <script>
+        var PaymentAmount = ""
+
+
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
+        function GetAmount(){
+            var Amount = getUrlVars()
+            $('#Amount').val("₦"+ numberWithCommas(Amount.Amount))
+            PaymentAmount = Amount.Amount.substring(0, Amount.Amount.length-3)
+          
+        }
+
+        GetAmount()
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        function MakePayment() 
+        {
+
+             var Email = $('#Email').val()
+            var Mobile = $('#Mobile').val()
+            var Fullname = $('#Fullname').val()
+
+            FlutterwaveCheckout({
+                public_key: "FLWPUBK-3cbe0c80904dcf5edaf5c65beaa4e840-X",
+                tx_ref: "RX1",
+                amount: PaymentAmount,
+                currency: "NGN",
+                country: "NG",
+                payment_options: "Web",
+                redirect_url: // specified redirect URL
+                    "https://callbacks.piedpiper.com/flutterwave.aspx?ismobile=34",
+                meta: {
+                    consumer_id: Mobile,
+                    consumer_mac: "92a3-912ba-1192a",
+                },
+                customer: {
+                    email: Email,
+                    phone_number: Mobile,
+                    name: Fullname,
+                },
+                callback: function (data) {
+                    console.log(data);
+                },
+                onclose: function () {
+                    // close modal
+                },
+                customizations: {
+                    title: "My Order",
+                    description: "Payment for order from BMH",
+                    logo: "https://buildmyhouseafrica.com/Images/blue-1.png",
+                },
+            });
+        }
+ </script>
+
+</body>
+
+</html>

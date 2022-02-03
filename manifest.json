@@ -5,8 +5,8 @@
     "start_url" : "/app/index.html",
     "short_name" : "BMH",
     "description" : "",
-    "background_color": "#000000",
-    "theme_color": "#000000",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF",
      "icons": [
         {
           "src": "/Images/blue-1.png",

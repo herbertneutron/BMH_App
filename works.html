@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="isPWA">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <title>BMH | App</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fontawesome-all.min.css">
+    <link rel="manifest" href="manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-light" data-highlight="highlight-red" data-new-gr-c-s-check-loaded="14.1027.0"
+    data-gr-ext-installed="" style="background: white!important;;">
+
+    <div id="page" data-swup="0">
+        <div class="header header-auto-show header-fixed header-logo-center">
+            <a href="#" class="header-title"><img width="30" src="Images/blue-1.png"></a>
+            <a onclick="javascript:window.history.back();" class="header-icon header-icon-1"><i
+                    class="fa fa-arrow-left"></i></a>
+            <a href="#" data-toggle-theme="" class="header-icon header-icon-4 show-on-theme-dark"><i
+                    class="fas fa-sun"></i></a>
+            <a href="#" data-toggle-theme="" class="header-icon header-icon-4 show-on-theme-light"><i
+                    class="fas fa-moon"></i></a>
+            <a href="#" data-menu="menu-share" class="header-icon header-icon-3"><i class="fas fa-share-alt"></i></a>
+        </div>
+
+        <div class="page-title page-title-fixed">
+            <h1> <img width="40" src="Images/blue-1.png"></h1>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i
+                    class="fa fa-share-alt"></i></a>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light"
+                data-toggle-theme=""><i class="fa fa-moon"></i></a>
+            <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark"
+                data-toggle-theme=""><i class="fa fa-lightbulb color-yellow-dark"></i></a>
+            <a onclick="javascript:window.history.back();" class="page-title-icon shadow-xl bg-theme color-theme"><i
+                    class="fa fa-arrow-left"></i></a>
+        </div>
+        <div class="page-title-clear"></div>
+        <div id="menu-mains" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            data-menu-load="menu-mains.html" style="display: block; width: 280px;">
+        </div>
+
+        <div id="menu-share" class="menu menu-box-bottom rounded-m" data-menu-height="370"
+            style="display: block; height: 370px;">
+            <div class="menu-title">
+                <p class="color-highlight">Tap a link to</p>
+                <h1>Share</h1>
+                <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+            </div>
+            <div class="divider divider-margins mt-3 mb-0"></div>
+            <div class="content mt-0">
+                <div class="list-group list-custom-small list-icon-0">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToFacebook">
+                        <i class="fab fa-facebook-f font-12 bg-facebook color-white shadow-l rounded-s"></i>
+                        <span>Facebook</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="https://twitter.com/share?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToTwitter">
+                        <i class="fab fa-twitter font-12 bg-twitter color-white shadow-l rounded-s"></i>
+                        <span>Twitter</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.enableds.com/products/appkit/v22/index.html&amp;title=AppKit BootStrap&amp;summary=&amp;source="
+                        class="external-link shareToLinkedIn">
+                        <i class="fab fa-linkedin-in font-12 bg-linkedin color-white shadow-l rounded-s"></i>
+                        <span>LinkedIn</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="whatsapp://send?text=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToWhatsApp">
+                        <i class="fab fa-whatsapp font-12 bg-whatsapp color-white shadow-l rounded-s"></i>
+                        <span>WhatsApp</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                    <a href="mailto:?body=https://www.enableds.com/products/appkit/v22/index.html"
+                        class="external-link shareToMail border-0">
+                        <i class="fa fa-envelope font-12 bg-mail color-white shadow-l rounded-s"></i>
+                        <span>Email</span>
+                        <i class="fa fa-angle-right pr-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+
+            <div class="card contact-form">
+                <div class="content">
+                    <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                        <fieldset>
+                            <input type="text" id="ProfilePic" style="display:none">
+                            <div class="form-field form-name">
+                                <label class="contactNameField color-theme">Kindly state your Firstname (so we might
+                                    have it displayed on the app)<span>(required)</span></label>
+                                <input type="text" id="Firstname"  class="round-small">
+                            </div>
+                            <div class="form-field form-name">
+                                <label class="contactNameField color-theme">Kindly state your Lastname
+                                    <span>(required)</span></label>
+                                <input type="text" id="Lastname"  class="round-small" >
+                            </div>
+                            <div class="form-field form-name">
+                                <label class="contactNameField color-theme">Kindly provide your Mobile (so we might
+                                    easily contact you)<span>(required)</span></label>
+                                <input type="text" id="Mobile"  class="round-small" >
+                            </div>
+                            <div class="form-field form-name">
+                                <label class="contactNameField color-theme">Kindly provide your Email
+                                    <span>(required)</span></label>
+                                <input type="text" id="Email"  class="round-small" >
+                            </div>
+                            <div class="form-field form-email">
+                                <label class="contactEmailField color-theme">Kindly attach image of yourself
+                                    <span>(required)</span></label>
+                                <input type="file" class="form-control hidden"  accept="image/*;capture" onChange="handleImage(this)"/>
+                            </div>
+                            <div class="form-field form-text">
+                                <label class="contactMessageTextarea color-theme">How would you describe yourself (
+                                    kindly highlight your work strengths and weakness and how you want customers to view
+                                    you)</label>
+                                <textarea name="contactMessageTextarea" class="round-small"
+                                    id="contactMessageTextarea"></textarea>
+                            </div>
+                            <div class="form-field form-email">
+                                <label class="contactEmailField color-theme">Hypothetically speaking , how long would it
+                                    take to finish a floor plan ( this gives us and the client an idea of how long to
+                                    expect deliverables) (Architect,interior designer)<span>(required)</span></label>
+                                <input type="text" id="floorPlanTime"  class="round-small">
+                            </div>
+                            <div class="form-field form-email">
+                                <label class="contactEmailField color-theme">How much time do you think it will take to
+                                    accomplish a single residential property ( this helps us to know what the client
+                                    expects as far as speed is concerned?<span>(required)</span></label>
+                                <input type="text" id="singleResidentialTime"  class="round-small">
+                            </div>
+                            <div class="form-field form-email">
+                                <label class="contactEmailField color-theme">Kindly attach a link to images of at most
+                                    10 best Jobs ( preferably un-watermarked, kindly note that each job, should have
+                                    different views, to give the client a detailed perspective of each job)</label>
+
+                                <label class="contactEmailField color-theme">Instructions for image upload : Attach each
+                                    render/job in one folder, and do the same for other jobs, label each folder
+                                    according to the job e.g render for ikoyi palace, then place each folder into a
+                                    singular link ( which means it could get up to 10 folders in one link ) and attach
+                                    to the form<span>(required)</span></label>
+                                <input type="text" id="projectUrl"  class="round-small">
+                            </div>
+                            <div class="form-field form-email">
+                                <label class="contactEmailField color-theme">How much time will you need to work on a
+                                    project to see results? ( this helps us know how to place deadlines, and how to
+                                    follow up on the job ).<span>(required)</span></label>
+                                <input type="text" id="projectWorkTime" class="round-small">
+                            </div>
+                            <div class="form-field form-email">
+                                <label class="contactEmailField color-theme">How much do you charge per render i.e
+                                    (25,000 to 30,000).</label>
+                                <input type="text" id="charge"  class="round-small">
+                            </div>
+                            <br />
+                            <div class="form-button">
+                                <input type="submit"
+                                    class="btn font-300 btn-m btn-full rounded-sm  shadow-xl contactSubmitButton"
+                                    value="Submit" onclick="Setup()" data-formid="contactForm" style="background: black!important;">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div id="menu-share" class="menu menu-box-bottom menu-box-detached" style="display: block;">
+        <div class="menu-title mt-n1">
+            <p class="color-highlight">Just Tap the Social Icon. We'll add the Link</p><a href="#" class="close-menu"><i
+                    class="fa fa-times"></i></a>
+        </div>
+        <div class="content mb-0">
+            <div class="divider mb-0"></div>
+            <div class="list-group list-custom-small list-icon-0">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.enableds.com/products/appkit/v22/index.html"
+                    class="shareToFacebook external-link">
+                    <i class="font-18 fab fa-facebook-square color-facebook"></i>
+                    <span class="font-13">Facebook</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="https://twitter.com/share?text=https://www.enableds.com/products/appkit/v22/index.html"
+                    class="shareToTwitter external-link">
+                    <i class="font-18 fab fa-twitter-square color-twitter"></i>
+                    <span class="font-13">Twitter</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.enableds.com/products/appkit/v22/index.html&amp;title=AppKit BootStrap&amp;summary=&amp;source="
+                    class="shareToLinkedIn external-link">
+                    <i class="font-18 fab fa-linkedin color-linkedin"></i>
+                    <span class="font-13">LinkedIn</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="whatsapp://send?text=https://www.enableds.com/products/appkit/v22/index.html"
+                    class="shareToWhatsApp external-link">
+                    <i class="font-18 fab fa-whatsapp-square color-whatsapp"></i>
+                    <span class="font-13">WhatsApp</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="mailto:?body=https://www.enableds.com/products/appkit/v22/index.html"
+                    class="shareToMail external-link border-0">
+                    <i class="font-18 fa fa-envelope-square color-mail"></i>
+                    <span class="font-13">Email</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyD1eGdP6hCYQ06z86dMEwoLNFMPYPbhgYs&amp"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <script>
+        function checkIsMobile() {
+            if (navigator.userAgent.indexOf("Mobile") > 0) {
+                return true;
+            } else {
+                // alert('We currently run ONLY on mobile ')
+                //window.location.href = "https://buildmyhouseafrica.com/";
+                return true;
+            }
+        }
+
+        //checkIsMobile()
+
+        const handleImage = async(element) => {
+        
+        const serviceImage = element.files[0];
+        const data = new FormData();
+        const url = "https://api.cloudinary.com/v1_1/thevetdoctor/image/upload";
+        data.append("file", serviceImage);
+        data.append("upload_preset", "zunt8yrw");
+        const res = await fetch(url, {
+          method: "POST",
+          body: data
+        });
+        const imgLink = await res.json();
+        $("#ProfilePic").val(imgLink.secure_url)
+
+      }
+
+        function RequestResponse(title, message, icon) {
+            swal({
+                title: title,
+                text: message,
+                icon: icon,
+                //timer: 3000,
+                button: "okay"
+            }).then(function () {
+                location.reload();
+            });
+
+        }
+
+        function encodeProfile(element) {
+            var file = element.files[0];
+            var reader = new FileReader();
+            reader.onloadend = function () {
+                $("#ProfilePic").val(reader.result)
+             }
+            reader.readAsDataURL(file);
+
+         }
+        
+        function Setup() {
+
+            var firstname = $("#Firstname").val()
+            var mobile = $("#Mobile").val()
+            var email = $("#Email").val()
+            var lastname = $("#Lastname").val()
+            var profileImage = $("#ProfilePic").val()
+            var projectUrl = $("#projectUrl").val()
+            var floorPlanTime = $("#floorPlanTime").val()
+            var singleResidentialTime = $("#singleResidentialTime").val()
+            var projectWorkTime = $("#projectWorkTime").val()
+            var charge = $("#charge").val()
+
+            var query = `
+            mutation {
+                        createArchitectProfile(
+                            firstname: "${firstname}",
+                            lastname: "${lastname}",
+                            email: "${email}",
+                            mobile: "${mobile}",
+                            description: "Professional Architect",
+                            profileImage: "${profileImage}",
+                            projectUrl: "${projectUrl}",
+                            floorPlanTime: "${floorPlanTime}",
+                            singleResidentialTime: "${singleResidentialTime}",
+                            projectWorkTime: "${projectWorkTime}",
+                            charge: "${charge}"
+                        ) {
+                            id
+                            firstName
+                            lastName
+                            email
+                            mobile
+                            description
+                            profileImage
+                            projectUrl
+                            floorPlanTime
+                            singleResidentialTime
+                            projectWorkTime
+                            charge
+                        }
+                        }`;
+            var Url = "https://us-central1-build-myhouse.cloudfunctions.net/bmhAPi/graphql?query=" + query
+
+
+            $.ajax({
+                method: 'POST',
+                url: Url,
+                //data: JSON.stringify({"query": query}),
+                contentType: 'application/json',
+                success: function (data) 
+                {
+                    
+                     RequestResponse("", "Your submission was successful..A member of BMH would get back to you soon", "success")
+                 },
+                error: function (data) {
+                    console.log(data);
+                }
+
+            })
+
+        };
+    </script>
+
+</body>
+
+</html>
